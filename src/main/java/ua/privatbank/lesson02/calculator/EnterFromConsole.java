@@ -16,7 +16,7 @@ public class EnterFromConsole {
      * @param question - фраза приглашающая пользователя ввести с консоли число.
      * @return operand - целое число введенное пользователем.
      */
-    protected static int enterIntegerFromConsole(String question) {
+    public static int enterIntegerFromConsole(String question) {
         int operand = 0;
         Scanner in = new Scanner(System.in);
         System.out.print(question);
@@ -32,7 +32,7 @@ public class EnterFromConsole {
         return operand;
     }
 
-    protected static double enterDoubleFromConsole(String question) {
+    public static double enterDoubleFromConsole(String question) {
         double operand = 0;
         Scanner in = new Scanner(System.in);
         System.out.print(question);
