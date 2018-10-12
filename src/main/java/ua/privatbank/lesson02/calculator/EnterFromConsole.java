@@ -32,6 +32,11 @@ public class EnterFromConsole {
         return operand;
     }
 
+    /**
+     * Метод запрашивает у пользователя ввод числа типа double.
+     * @param question - фраза приглашающая пользователя ввести с консоли число.
+     * @return operand - число типа double введенное пользователем.
+     */
     public static double enterDoubleFromConsole(String question) {
         double operand = 0;
         Scanner in = new Scanner(System.in);
@@ -45,6 +50,19 @@ public class EnterFromConsole {
                 in.next();
             }
         }
+        return operand;
+    }
+
+    /**
+     * Метод запрашивает у пользователя ввод строки.
+     * @param question - фраза приглашающая пользователя ввести с консоли строки.
+     * @return operand - введенная пользователем строка.
+     */
+    public static String enterStringFromConsole(String question) {
+        String operand;
+        Scanner in = new Scanner(System.in);
+        System.out.print(question);
+        operand = in.nextLine();
         return operand;
     }
 }
